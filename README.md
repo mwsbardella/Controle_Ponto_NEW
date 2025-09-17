@@ -1,7 +1,3 @@
-Perfeito, Maurício! Criar um `README.md` é uma ótima ideia pra documentar o projeto e facilitar nossa continuidade. Com base na conversa que tivemos, aqui está uma sugestão bem estruturada para o seu repositório:
-
----
-
 ## 🕒 Sistema de Controle de Ponto
 
 Projeto web para gerenciamento de jornadas de trabalho, desenvolvido com **FastAPI**, **PostgreSQL**, **Docker** e **HTML/JS** no frontend.
@@ -85,7 +81,3 @@ Projeto web para gerenciamento de jornadas de trabalho, desenvolvido com **FastA
 - Persistir alterações dos horários via API
 - Deletar jornada
 - Servir frontend via Docker
-
----
-
-Quando você subir o repositório, é só me mandar o link e eu continuo de onde paramos. Se quiser, posso te ajudar a melhorar o visual, adicionar testes ou até preparar uma versão com React futuramente. Só dizer!
