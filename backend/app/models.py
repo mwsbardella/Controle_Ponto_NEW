@@ -6,6 +6,7 @@ class Jornada(Base):
     __tablename__ = "gt_jornada"
     id = Column(Integer, primary_key=True, index=True)
     descricao = Column(String, nullable=False)
+    ativo = Column(String(1), default="Y")
     horarios = relationship("Horario", back_populates="jornada")
 
 class Horario(Base):

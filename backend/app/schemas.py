@@ -7,14 +7,16 @@ class HorarioCreate(BaseModel):
     entrada: time
     saida: time
 
-class JornadaCreate(BaseModel):
-    descricao: str
-    horarios: List[HorarioCreate]
-
 class HorarioResponse(HorarioCreate):
     id: int
+
+class JornadaCreate(BaseModel):
+    descricao: str
+    ativo: str
+    horarios: List[HorarioCreate]
 
 class JornadaResponse(BaseModel):
     id: int
     descricao: str
+    ativo: str
     horarios: List[HorarioResponse]

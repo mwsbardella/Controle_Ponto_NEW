@@ -1,3 +1,4 @@
+from typing import List
 from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
 from app.database import get_db
@@ -7,7 +8,7 @@ router = APIRouter()
 
 @router.post("/jornadas", response_model=schemas.JornadaResponse)
 def criar_jornada(jornada: schemas.JornadaCreate, db: Session = Depends(get_db)):
-    nova_jornada = models.Jornada(descricao=jornada.descricao)
+    nova_jornada = models.Jornada(descricao=jornada.descricao, ativo=jornada.ativo)
     db.add(nova_jornada)
     db.commit()
     db.refresh(nova_jornada)
